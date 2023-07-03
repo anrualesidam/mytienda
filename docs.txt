@@ -1,0 +1,14 @@
+Se utilza la libreria ultralytics para tomar ventaja de su implementación de la versión 8 de la rutina YOLO. Esto con el fin de realizar análisis de sujetos en las cámaras de seguridad de MyTienda.
+
+Para esto, en primer lugar se ejecuta el códgio "frame.py". Para esto lo primero es especificar en el mismo la ruta en la que se encuentra el video que se quiere analizar,
+este código imprime en pantalla los frames por segundo del video.
+
+Luego de esto se ejecuta el código "tienda.py" este codigo analiza un video tomando una foto del mismo cada 60 frames y realizando el proceso clásico de la rutina YOLO sobre esta foto.
+Si el resultado de "frame.py" es diferente 12 se debe editar la línea 35 de este código para que funcione de manera correcta.
+
+Las imagenes se guardan entonces en la carpeta "runs"
+
+
+TAREAS:
+- Conectar via DVR esta implemntación a los resultados de las cámaras de seguridad de MyTienda.
+- Realizar edición de imagen sobre las fotos tomadas de modo que la rutina YOLO pueda interpretar bien lo observado.
